@@ -1,0 +1,261 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+/*-----------------------------BODY CSS-------------------------*/
+body{
+    color: rgb(250, 246, 246);
+    background: hwb(0 0% 100%);
+}
+/*-----------------------------HEADER CSS-------------------------*/
+.header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: rgb(251, 247, 247);
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    width: 100px;
+}
+.navbar a {
+    display: inline-block;
+    font-size: 25px;
+    color: rgb(246, 246, 249);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+.navbar a:hover{
+    color:cyan;
+    background: #0ef;
+    color: #060606;
+    box-shadow: 0 0 20px cyan;
+}
+/*-----------------------------HOME CSS-------------------------*/
+.home{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background:#010101;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+.home-img{
+    background-image:url('./profile\ pic.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 45%;
+}
+.home-content{
+    max-width:600px;
+}
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+}
+.home-content h3:nth-of-type(2){
+    margin-bottom: 30px;
+}
+.home-content h1{
+    font-size: 66px;
+    font-weight: 700;
+    margin: -3px 0;
+    color:#0ef;
+}
+.home-sci{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background:transparent;
+    border-radius: 55%;
+    font-size: 35px;
+    color: cyan;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+}
+.home-sci a:hover{
+    background: #0ef;
+    color: #060606;
+    box-shadow: 0 0 20px cyan;
+}
+/*-----------------------------ABOUT CSS-------------------------*/
+.about{
+    display: flex;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap:1.5rem;
+}
+.about-text h2{
+    font-size: 60px;
+    padding: 1px 10% 0;
+    color: cyan;
+}
+.about-text h2 span{
+    color: cyan;
+    padding: 1px 10% 0;
+}
+.about-text h4{
+    font-size: 29px;
+    font-weight: 600;
+    color: rgb(222, 22, 79);
+    line-height: 1.7;
+    margin: 20px 0 30px;
+    padding: 1px 10% 0;
+}
+.about-text p{
+    color: aliceblue;
+    font-size: 25px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+    padding: 1px 10% 0;
+}
+/*-----------------------------SKILL CSS-------------------------*/
+.skill{
+    display: flex;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap:1.5rem;
+}
+.skill-text h2{
+    font-size: 60px;
+    padding: 1px 10% 0;
+    color: cyan;
+}
+.skill-text {
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+    padding: 1px 10% 0;
+}
+/*-----------------------------RESUME CSS-------------------------*/
+.resume{
+    display: flex;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap:1.5rem;
+}
+.resume-text h2{
+    font-size: 60px;
+    padding: 1px 10% 0;
+    color: cyan;
+}
+.resume-text {
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 5rem;
+    padding: 1px 10% 0;
+}
+.btn.btn2{
+    display: inline-block;
+    color: rgb(242, 245, 245);
+}
+/*-----------------------------CONTACT CSS-------------------------*/
+.contact{
+    display: flex;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap:1.5rem;
+}
+.contact-text h2{
+    font-size: 60px;
+    padding: 1px 10%;
+    color: cyan;
+}
+
+.contact-text {
+    color: rgb(92, 3, 3);
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 5rem;
+    padding: 1px 10% 0;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color:#0ef;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color:#0ef;
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background-color: #060683;
+}
+form input,form textarea{
+    width: 100%;
+    border:0;
+    outline: none;
+    background: #262626;
+    padding:15px ;
+    margin: 15px 0;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    background: #262626;
+    background-size: cover;
+    font-weight: 500;
+    margin-top: 50px;
+    align-items: center;
+}
+.copyright i{
+    color:#0ef;
+    align-items: center;
+}
+
+
+
