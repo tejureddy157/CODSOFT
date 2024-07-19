@@ -1,0 +1,137 @@
+/*-----------------------------------body css----------------------------------*/
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: rgb(2, 2, 2);
+    background-image: url('./cal\ background.jpeg');
+  }
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  /*-----------------------------------header css----------------------------------*/
+  .header{
+    text-align: center;
+    color: #f2f4f1;
+    font-size: large;
+    bottom: 1px;
+  }
+  /*-----------------------------------container css----------------------------------*/
+  .container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    margin: 20px auto;
+  }
+  .h1{
+    text-align: center;
+    color: #f1f3f4;
+    font-size: medium;
+  }
+  /*-----------------------------------calculator css----------------------------------*/
+  #calculator {
+    max-width: 320px;
+    width: 340px;
+    height: 460px;
+    background-color: #fcfdfd;
+    margin: auto;
+    padding: 10px;
+    top: 5px;
+    position: relative;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  /*-----------------------------------result css----------------------------------*/
+  #result {
+    height: 100px;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 5px;
+    background-color: #dadfe3;
+    font-size: fit-content;
+    overflow: scroll;
+  }
+  #result::-webkit-scrollbar {
+    display: none;
+  }
+  /*-----------------------------------history css----------------------------------*/
+  #history {
+    text-align: right;
+    height: 18px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    color: #615959;
+  }
+  #history::-webkit-scrollbar {
+    display: none;
+  }
+  /*-----------------------------------output css----------------------------------*/
+  #output {
+    text-align: right;
+    height: 40px;
+    margin: 10px 10px;
+    font-size: 30px;
+  }
+  /*-----------------------------------keybord css----------------------------------*/
+  #keyboard {
+    height: 350px;
+    background-color: #a7cbdd;
+  }
+  .operator,
+  .number,
+  .empty {
+    width: 50px;
+    height: 42px;
+    margin: 15px;
+    float: right;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .number,
+  .empty {
+    background-color: #8d8f93;
+  }
+  .number,
+  .operator {
+    cursor: pointer;
+  }
+  .operator:active,
+  .number:active {
+    font-size: 20px;
+  }
+  .operator:focus,
+  .number:focus,
+  .empty:focus {
+    outline: 0;
+  }
+  button:nth-child(4) {
+    font-size: 25px;
+    background-color: #8376a3;
+  }
+  button:nth-child(8) {
+    font-size: 25px;
+    background-color: #c17fbb;
+  }
+  button:nth-child(12) {
+    font-size: 25px;
+    background-color: #a4bc5b;
+  }
+  button:nth-child(16) {
+    font-size: 25px;
+    background-color: #946653;
+  }
+  button:nth-child(20) {
+    font-size: 25px;
+    background-color: #669a78;
+  }
+  /*-----------------------------------copyright css----------------------------------*/
+  .copyright p {
+    margin-top: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.0rem;
+  }
+  
